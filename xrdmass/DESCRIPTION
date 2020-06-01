@@ -1,0 +1,11 @@
+Package: xrdmass
+Type: Package
+Title: Element mass calculation for XRD samples
+Version: 0.1.0
+Author: Manuel R. Popp <geooekologie@cdpopp.de>
+Maintainer: Manuel R. Popp <geooekologie@cdpopp.de>
+Description: A package to calculate the percentual share (by weight) of elements in an XRD sample or similar data. V.0.01: This package contains the functions form.weight() and xmass(). The form.weight() function is used to calculate the weight of chemical compounds by formula, i.e. the molar mass of the compound, as well as the summarized mass of each element within the compound. The xmass() function calculates the sum of masses of all elements within a data.frame of compounds, weighted by the percentual share of the respective compounds.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
