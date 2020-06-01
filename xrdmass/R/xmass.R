@@ -37,5 +37,7 @@ xmass <- function(data){
   for(i in 1:nrow(out)){
     out$percentual_mass[i] <- sum(all_phases$psum[which(all_phases$element == out$element[i])])
   }
+  total <- sum(out$percentual_mass)
+  out$percentual_mass <- out$percentual_mass/total
   return(out)
 }
