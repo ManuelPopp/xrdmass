@@ -19,6 +19,12 @@ form.weight <- function(formula, out = "formula", update = FALSE){
       stop("Formula contains unmatched closing bracket.")
     }
   }
+  
+  # handle "meaningless" brackets
+  while(grepl(")(", formula, fixed = TRUE)){
+    formula <- gsub("\\)\\(", "\\)1\\(", formula)
+    }
+  
   caps <- unlist(gregexpr("[[:upper:]]", formula))
 
   while(unlist(gregexpr("[[:upper:]][[:upper:]]", formula))[1] >= 1){
