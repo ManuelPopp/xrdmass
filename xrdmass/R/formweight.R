@@ -218,7 +218,7 @@ form.weight <- function(formula, out = "formula", update = FALSE){
     #el_info <- read.table(text = tmp, sep = ",", header = TRUE)
     #element_info <- el_info[,c(1, 2, 3, 4)]
   }else{
-    element_info <- data.frame(AtomicNumber = 1:74)
+    element_info <- data.frame(AtomicNumber = 1:118)
     element_info$Element <- c("Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", 
 "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", 
 "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", 
