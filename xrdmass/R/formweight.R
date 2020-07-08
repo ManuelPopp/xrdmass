@@ -231,24 +231,26 @@ form.weight <- function(formula, out = "formula", update = FALSE){
 "Xenon", "Cesium", "Barium", "Lanthanum", "Cerium", "Praseodymium", 
 "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium", 
 "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", 
-"Lutetium", "Hafnium", "Tantalum", "Wolfram", "Astatine", "Radon", 
-"Francium", "Radium", "Actinium", "Thorium", "Protactinium", 
-"Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", 
-"Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium", 
-"Lawrencium", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", 
-"Hassium", "Meitnerium", "Darmstadtium", "Roentgenium", "Copernicum", 
-"Nihonium", "Flerovium", "Moscovium", "Livermorium", "Tennessine", 
-"Oganesson")
+"Lutetium", "Hafnium", "Tantalum", "Wolfram", "Rhenium", "Osmium", 
+"Iridium", "Platinium", "Gold", "Mercury", "Thallium", "Lead", 
+"Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", 
+"Actinium", "Thorium", "Protactinium", "Uranium", "Neptunium", 
+"Plutonium", "Americium", "Curium", "Berkelium", "Californium", 
+"Einsteinium", "Fermium", "Mendelevium", "Nobelium", "Lawrencium", 
+"Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", 
+"Meitnerium", "Darmstadtium", "Roentgenium", "Copernicum", "Nihonium", 
+"Flerovium", "Moscovium", "Livermorium", "Tennessine", "Oganesson")
     element_info$Symbol <- c("H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", 
 "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", 
 "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", 
 "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Tc", "Ru", 
 "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te", "I", "Xe", "Cs", 
 "Ba", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", 
-"Ho", "Er", "Tm", "Yb", "Lu", "Hf", "Ta", "W", "At", "Rn", "Fr", 
-"Ra", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", 
-"Es", "Fm", "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", 
-"Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og")
+"Ho", "Er", "Tm", "Yb", "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", 
+"Pt", "Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", 
+"Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", 
+"Fm", "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", 
+"Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og")
     element_info$AtomicMass <- c(1.007, 4.002, 6.941, 9.012, 10.811, 12.011, 14.007, 15.999, 
 18.998, 20.18, 22.99, 24.305, 26.982, 28.086, 30.974, 32.065, 
 35.453, 39.948, 39.098, 40.078, 44.956, 47.867, 50.942, 51.996, 
@@ -258,11 +260,12 @@ form.weight <- function(formula, out = "formula", update = FALSE){
 114.818, 118.71, 121.76, 127.6, 126.904, 131.293, 132.905, 137.327, 
 138.905, 140.116, 140.908, 144.242, 145, 150.36, 151.964, 157.25, 
 158.925, 162.5, 164.93, 167.259, 168.934, 173.054, 174.967, 178.49, 
-180.948, 183.84, 209.99, 222.02, 223.02, 226.03, 227.03, 232.04, 
-231.04, 238.03, 237.05, 244.06, 243.06, 247.07, 247.07, 251.08, 
-252.08, 257.1, 258.1, 259.1, 262.11, 267.12, 268.13, 271.13, 
-274.14, 277.15, 278.16, 281.17, 282.17, 285.18, 286.18, 289.19, 
-290.2, 293.21, 294.21, 294.21)
+180.948, 183.84, 186.21, 190.2, 192.22, 195.08, 196.96657, 200.59, 
+204.383, 207, 208.9804, 208.98243, 209.99, 222.02, 223.02, 226.03, 
+227.03, 232.04, 231.04, 238.03, 237.05, 244.06, 243.06, 247.07, 
+247.07, 251.08, 252.08, 257.1, 258.1, 259.1, 262.11, 267.12, 
+268.13, 271.13, 274.14, 277.15, 278.16, 281.17, 282.17, 285.18, 
+286.18, 289.19, 290.2, 293.21, 294.21, 294.21)
   }
 
   ################################################
